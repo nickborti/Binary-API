@@ -1,0 +1,16 @@
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<!-- TradingView Widget BEGIN -->
+
+  <!-- TradingView Widget END -->
+  <script>
+    setTimeout(() => {
+       fetch('https://ssltsw.forexprostools.com/api.php?action=refresher&pairs=1,2,3,5,7,9,15&timeframe=60&lang=1')
+        .then(res => {
+          return res.json()
+        }).then(result => {
+          console.log(result)
+        })
+
+    }, 5000)
+    
+  </script>
