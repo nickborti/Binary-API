@@ -4,7 +4,7 @@
   <!-- TradingView Widget END -->
   <script>
     setTimeout(() => {
-       fetch('https://ssltsw.forexprostools.com/api.php?action=refresher&pairs=1,2,3,5,7,9,15&timeframe=60&lang=1')
+       fetch('https://cors-anywhere.herokuapp.com/https://ssltsw.forexprostools.com/api.php?action=refresher&pairs=1,2,3,5,7,9,15&timeframe=60&lang=1')
         .then(res => {
           return res.json()
         }).then(result => {
