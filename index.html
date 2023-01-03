@@ -1,16 +1,40 @@
-<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-<!-- TradingView Widget BEGIN -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-  <!-- TradingView Widget END -->
+<!-- Optional theme -->
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="starter-template">
+      <h1>Signals</h1>
+      <div class="bs-callout bs-callout-danger" id="callout-inputgroup-text-input-only">
+        <h4>Textual <code>&lt;input&gt;</code>s only</h4>
+        <p>Avoid using <code>&lt;select&gt;</code> elements here as they cannot be fully styled in WebKit browsers.</p>
+        <p>Avoid using <code>&lt;textarea&gt;</code> elements here as their <code>rows</code> attribute will not be respected in some cases.</p>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+  
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script>
-    setTimeout(() => {
-       fetch('https://cors-anywhere.herokuapp.com/https://ssltsw.forexprostools.com/api.php?action=refresher&pairs=1,2,3,5,7,9,15&timeframe=60&lang=1')
+    // setInterval(() => {
+       fetch('https://binary-api-node.herokuapp.com/test-api')
         .then(res => {
           return res.json()
         }).then(result => {
           console.log(result)
         })
 
-    }, 5000)
+    // }, 60000)
     
   </script>
+</body>
+</html>
